@@ -1,0 +1,14 @@
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.csproj.AssemblyReference.cache
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.GeneratedMSBuildEditorConfig.editorconfig
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.AssemblyInfoInputs.cache
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.AssemblyInfo.cs
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.csproj.CoreCompileInputs.cache
+E:\E-Library\E-Library\E-Library.Databases\bin\Debug\net6.0\E-Library.Databases.deps.json
+E:\E-Library\E-Library\E-Library.Databases\bin\Debug\net6.0\E-Library.Databases.runtimeconfig.json
+E:\E-Library\E-Library\E-Library.Databases\bin\Debug\net6.0\E-Library.Databases.dll
+E:\E-Library\E-Library\E-Library.Databases\bin\Debug\net6.0\E-Library.Databases.pdb
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.dll
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\refint\E-Library.Databases.dll
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.pdb
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.genruntimeconfig.cache
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\ref\E-Library.Databases.dll

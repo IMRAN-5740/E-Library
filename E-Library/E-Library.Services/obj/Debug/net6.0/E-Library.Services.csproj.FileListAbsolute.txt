@@ -1,0 +1,12 @@
+E:\E-Library\E-Library\E-Library.Services\bin\Debug\net6.0\E-Library.Services.deps.json
+E:\E-Library\E-Library\E-Library.Services\bin\Debug\net6.0\E-Library.Services.dll
+E:\E-Library\E-Library\E-Library.Services\bin\Debug\net6.0\E-Library.Services.pdb
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.csproj.AssemblyReference.cache
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.GeneratedMSBuildEditorConfig.editorconfig
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.AssemblyInfoInputs.cache
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.AssemblyInfo.cs
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.csproj.CoreCompileInputs.cache
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.dll
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\refint\E-Library.Services.dll
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\E-Library.Services.pdb
+E:\E-Library\E-Library\E-Library.Services\obj\Debug\net6.0\ref\E-Library.Services.dll
