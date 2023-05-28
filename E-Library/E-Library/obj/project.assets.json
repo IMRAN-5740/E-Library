@@ -716,6 +716,19 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1027,6 +1040,8 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "E-Library.Models": "1.0.0",
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.15",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.AspNetCore.Identity.UI": "6.0.15",
           "Microsoft.EntityFrameworkCore": "6.0.15",
@@ -1038,6 +1053,33 @@
         },
         "runtime": {
           "bin/placeholder/E-Library.Databases.dll": {}
+        }
+      },
+      "E-Library.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.15"
+        },
+        "compile": {
+          "bin/placeholder/E-Library.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-Library.Models.dll": {}
+        }
+      },
+      "E-Library.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "E-Library.Databases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/E-Library.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-Library.Repositories.dll": {}
         }
       }
     }
@@ -2099,6 +2141,36 @@
         "version.txt"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.Collections.Immutable/6.0.0": {
       "sha512": "l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
       "type": "package",
@@ -2615,16 +2687,28 @@
       "type": "project",
       "path": "../E-Library.Databases/E-Library.Databases.csproj",
       "msbuildProject": "../E-Library.Databases/E-Library.Databases.csproj"
+    },
+    "E-Library.Models/1.0.0": {
+      "type": "project",
+      "path": "../E-Library.Models/E-Library.Models.csproj",
+      "msbuildProject": "../E-Library.Models/E-Library.Models.csproj"
+    },
+    "E-Library.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../E-Library.Repositories/E-Library.Repositories.csproj",
+      "msbuildProject": "../E-Library.Repositories/E-Library.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "E-Library.Databases >= 1.0.0",
+      "E-Library.Models >= 1.0.0",
+      "E-Library.Repositories >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.15",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.15"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.15",
+      "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
@@ -2655,8 +2739,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\E-Library\\E-Library\\E-Library.Databases\\E-Library.Databases.csproj": {
-              "projectPath": "E:\\E-Library\\E-Library\\E-Library.Databases\\E-Library.Databases.csproj"
+            "E:\\E-Library\\E-Library\\E-Library.Models\\E-Library.Models.csproj": {
+              "projectPath": "E:\\E-Library\\E-Library\\E-Library.Models\\E-Library.Models.csproj"
+            },
+            "E:\\E-Library\\E-Library\\E-Library.Repositories\\E-Library.Repositories.csproj": {
+              "projectPath": "E:\\E-Library\\E-Library\\E-Library.Repositories\\E-Library.Repositories.csproj"
             }
           }
         }
@@ -2692,6 +2779,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.15, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           }
         },
         "imports": [

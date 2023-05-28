@@ -12,3 +12,6 @@ E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\refint\E-Library.Dat
 E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.pdb
 E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.genruntimeconfig.cache
 E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\ref\E-Library.Databases.dll
+E:\E-Library\E-Library\E-Library.Databases\bin\Debug\net6.0\E-Library.Models.dll
+E:\E-Library\E-Library\E-Library.Databases\bin\Debug\net6.0\E-Library.Models.pdb
+E:\E-Library\E-Library\E-Library.Databases\obj\Debug\net6.0\E-Library.Databases.csproj.CopyComplete

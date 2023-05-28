@@ -5,11 +5,13 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Library", "E-Library\E-Library.csproj", "{52ED1AA3-AD38-4F02-BAC7-57945D937C5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Library.Databases", "E-Library.Databases\E-Library.Databases.csproj", "{C5844096-C463-452A-96F6-A5E0B7CF32C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Library.Databases", "E-Library.Databases\E-Library.Databases.csproj", "{C5844096-C463-452A-96F6-A5E0B7CF32C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Library.Repositories", "E-Library.Repositories\E-Library.Repositories.csproj", "{C196F14F-B444-4647-8CB5-F28E5485660E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Library.Repositories", "E-Library.Repositories\E-Library.Repositories.csproj", "{C196F14F-B444-4647-8CB5-F28E5485660E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Library.Services", "E-Library.Services\E-Library.Services.csproj", "{B59CD500-5E00-48D4-9D8F-BD32A6627611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Library.Services", "E-Library.Services\E-Library.Services.csproj", "{B59CD500-5E00-48D4-9D8F-BD32A6627611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Library.Models", "E-Library.Models\E-Library.Models.csproj", "{E5D384EF-5876-4AB4-886D-BF6EE4E7E8DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B59CD500-5E00-48D4-9D8F-BD32A6627611}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B59CD500-5E00-48D4-9D8F-BD32A6627611}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B59CD500-5E00-48D4-9D8F-BD32A6627611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D384EF-5876-4AB4-886D-BF6EE4E7E8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D384EF-5876-4AB4-886D-BF6EE4E7E8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D384EF-5876-4AB4-886D-BF6EE4E7E8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D384EF-5876-4AB4-886D-BF6EE4E7E8DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

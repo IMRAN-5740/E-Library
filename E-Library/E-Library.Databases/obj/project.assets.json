@@ -86,6 +86,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.15"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.15": {
         "type": "package",
         "dependencies": {
@@ -1001,6 +1020,20 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "E-Library.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.15"
+        },
+        "compile": {
+          "bin/placeholder/E-Library.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-Library.Models.dll": {}
+        }
       }
     }
   },
@@ -1108,6 +1141,21 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.6.0.15.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.15": {
+      "sha512": "Rey9CE8pa9Var8r2Vkn+G0ZNciGU9h9x7xxS9NSXFZXOhcHXxm4d+cVCva+pffycTzR/ewpftEkObZA9pDP/6w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.15": {
@@ -2557,12 +2605,19 @@
         "x.pagedlist.mvc.core.8.4.7.nupkg.sha512",
         "x.pagedlist.mvc.core.nuspec"
       ]
+    },
+    "E-Library.Models/1.0.0": {
+      "type": "project",
+      "path": "../E-Library.Models/E-Library.Models.csproj",
+      "msbuildProject": "../E-Library.Models/E-Library.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "E-Library.Models >= 1.0.0",
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.15",
       "Microsoft.EntityFrameworkCore >= 6.0.15",
@@ -2597,7 +2652,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\E-Library\\E-Library\\E-Library.Models\\E-Library.Models.csproj": {
+              "projectPath": "E:\\E-Library\\E-Library\\E-Library.Models\\E-Library.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2617,6 +2676,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.15, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

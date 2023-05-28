@@ -10,3 +10,8 @@ E:\E-Library\E-Library\E-Library.Repositories\obj\Debug\net6.0\E-Library.Reposit
 E:\E-Library\E-Library\E-Library.Repositories\obj\Debug\net6.0\refint\E-Library.Repositories.dll
 E:\E-Library\E-Library\E-Library.Repositories\obj\Debug\net6.0\E-Library.Repositories.pdb
 E:\E-Library\E-Library\E-Library.Repositories\obj\Debug\net6.0\ref\E-Library.Repositories.dll
+E:\E-Library\E-Library\E-Library.Repositories\bin\Debug\net6.0\E-Library.Databases.dll
+E:\E-Library\E-Library\E-Library.Repositories\bin\Debug\net6.0\E-Library.Databases.pdb
+E:\E-Library\E-Library\E-Library.Repositories\obj\Debug\net6.0\E-Library.Repositories.csproj.CopyComplete
+E:\E-Library\E-Library\E-Library.Repositories\bin\Debug\net6.0\E-Library.Models.dll
+E:\E-Library\E-Library\E-Library.Repositories\bin\Debug\net6.0\E-Library.Models.pdb
