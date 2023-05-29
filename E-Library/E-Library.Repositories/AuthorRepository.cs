@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace E_Library.Repositories
 {
-    public class StudentRepository
+    public class AuthorRepository
     {
-        ApplicationDbContext _dbContext; 
-        public StudentRepository(ApplicationDbContext dbContext)
+        ApplicationDbContext _dbContext;
+        public AuthorRepository(ApplicationDbContext dbContext)
         {
-          _dbContext = dbContext;
+            _dbContext = dbContext;
         }
 
         public bool Create(Author anAuthor)
         {
-            _dbContext.Authors.Add(anAuthor);   
-            return _dbContext.SaveChanges()>0;
+            _dbContext.Authors.Add(anAuthor);
+            return _dbContext.SaveChanges() > 0;
         }
 
         public bool Update(Author anAuthor)
@@ -32,12 +32,15 @@ namespace E_Library.Repositories
             _dbContext.Authors.Remove(anAuthor);
             return _dbContext.SaveChanges() > 0;
         }
-        public Author GetById(int id)
+
+        public Category GeetById(int id)
         {
-            return _dbContext.Authors.FirstOrDefault(data => data.Id == id);
+            return _dbContext.Categories.FirstOrDefault(data => data.Id == id);
+
         }
         public ICollection<Author> GetAll()
         {
-            return _dbContext.Authors.ToList();        }
+            return _dbContext.Authors.ToList();
+        }
     }
 }

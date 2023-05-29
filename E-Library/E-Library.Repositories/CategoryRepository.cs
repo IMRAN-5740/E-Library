@@ -1,6 +1,5 @@
 ﻿using E_Library.Databases.Data;
 using E_Library.Models.EntityModels;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,35 +8,35 @@ using System.Threading.Tasks;
 
 namespace E_Library.Repositories
 {
-    public class BookRepository
+    public class CategoryRepository
     {
         ApplicationDbContext _dbContext;
-        public BookRepository(ApplicationDbContext dbContext)
+        public CategoryRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public bool Create(Category aBook)
+        public bool Create(Category aCategory)
         {
-             _dbContext.Categories.Add(aBook);
+            _dbContext.Categories.Add(aCategory);
             return _dbContext.SaveChanges() > 0;
         }
 
-        public bool Update(Category aBook)
+        public bool Update(Category aCategory)
         {
-            _dbContext.Categories.Update(aBook);
+            _dbContext.Categories.Update(aCategory);
             return _dbContext.SaveChanges() > 0;
         }
-        public bool Remove(Category aBook)
+        public bool Remove(Category aCategory)
         {
-            _dbContext.Categories.Remove(aBook);
+            _dbContext.Categories.Remove(aCategory);
             return _dbContext.SaveChanges() > 0;
         }
 
         public Category GeetById(int id)
         {
-         return _dbContext.Categories.FirstOrDefault(data => data.Id == id);
-            
+            return _dbContext.Categories.FirstOrDefault(data=>data.Id==id);
+
         }
         public ICollection<Category> GetAll()
         {
