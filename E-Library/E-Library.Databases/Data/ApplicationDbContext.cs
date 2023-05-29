@@ -17,6 +17,7 @@ namespace E_Library.Databases.Data
         public DbSet<Author> Authors { get; set; }
         public DbSet<Issue> Issues { get; set; }
         public DbSet<IssuesBook> IssuesBooks { get; set; }
+        public DbSet<Student> Students { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     }
 }

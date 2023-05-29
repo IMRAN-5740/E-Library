@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace E_Library.Models.AuthModels
 {
-    public class Student
+    public class Student:IdentityUser
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Please Enter your Name")]
