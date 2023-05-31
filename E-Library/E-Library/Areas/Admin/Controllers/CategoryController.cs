@@ -2,7 +2,6 @@
 using E_Library.Models.BooksCategory;
 using E_Library.Models.EntityModels;
 using E_Library.Services.Abstractions;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -26,7 +25,7 @@ namespace E_Library.Areas.Admin.Controllers
             if (!categories.Any())
             {
                 ViewBag.Message = "No Data Found";
-                return View();
+                return View("_NotFound");
             }
             var categoryListVMs = new List<CategoryListVM>();
 

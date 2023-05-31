@@ -8,5 +8,9 @@ namespace E_Library.Areas.Student.Controllers
         {
             return View();
         }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }

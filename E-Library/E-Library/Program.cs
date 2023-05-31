@@ -8,10 +8,15 @@ using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddMvc().AddRazorRuntimeCompilation();
 builder.Services.AddControllersWithViews();
 
 
+
 E_LibraryAppConfiguration.ConfigureDependencies(builder.Services);
+
+builder.Services.AddMvc();
+
 
 
 builder.Services.AddAutoMapper(typeof(Program));
@@ -50,6 +55,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.MapControllers();
 app.Run();
 

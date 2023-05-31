@@ -9,28 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Areas\Admin\Views\Author\Create.cshtml" />
-    <Content Remove="Areas\Admin\Views\Author\Delete.cshtml" />
-    <Content Remove="Areas\Admin\Views\Author\Details.cshtml" />
-    <Content Remove="Areas\Admin\Views\Author\Edit.cshtml" />
-    <Content Remove="Areas\Admin\Views\Author\Index.cshtml" />
-    <Content Remove="Areas\Admin\Views\Category\Create.cshtml" />
-    <Content Remove="Areas\Admin\Views\Category\Delete.cshtml" />
-    <Content Remove="Areas\Admin\Views\Category\Details.cshtml" />
-    <Content Remove="Areas\Admin\Views\Category\Edit.cshtml" />
-    <Content Remove="Areas\Admin\Views\Category\Index.cshtml" />
     <Content Remove="Views\Author\Create.cshtml" />
     <Content Remove="Views\Author\Delete.cshtml" />
     <Content Remove="Views\Author\Details.cshtml" />
     <Content Remove="Views\Author\Edit.cshtml" />
     <Content Remove="Views\Author\Index.cshtml" />
-    <Content Remove="Views\Shared\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.15" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.15">
       <PrivateAssets>all</PrivateAssets>
@@ -51,17 +41,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Areas\Admin\Views\Author\Create.cshtml" />
-    <None Include="Areas\Admin\Views\Author\Delete.cshtml" />
-    <None Include="Areas\Admin\Views\Author\Details.cshtml" />
-    <None Include="Areas\Admin\Views\Author\Edit.cshtml" />
-    <None Include="Areas\Admin\Views\Author\Index.cshtml" />
-    <None Include="Areas\Admin\Views\Category\Create.cshtml" />
-    <None Include="Areas\Admin\Views\Category\Delete.cshtml" />
-    <None Include="Areas\Admin\Views\Category\Details.cshtml" />
-    <None Include="Areas\Admin\Views\Category\Edit.cshtml" />
-    <None Include="Areas\Admin\Views\Category\Index.cshtml" />
-    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <None Include="Views\Author\Create.cshtml" />
     <None Include="Views\Author\Delete.cshtml" />
     <None Include="Views\Author\Details.cshtml" />
@@ -72,7 +51,6 @@
     <None Include="Views\Category\Details.cshtml" />
     <None Include="Views\Category\Edit.cshtml" />
     <None Include="Views\Category\Index.cshtml" />
-    <None Include="Views\Shared\Index.cshtml" />
   </ItemGroup>
 
 </Project>
