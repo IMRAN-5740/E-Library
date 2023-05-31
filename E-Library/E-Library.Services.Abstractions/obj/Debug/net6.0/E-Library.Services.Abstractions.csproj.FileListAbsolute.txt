@@ -1,0 +1,15 @@
+E:\E-Library\E-Library\E-Library.Services.Abstractions\bin\Debug\net6.0\E-Library.Services.Abstractions.deps.json
+E:\E-Library\E-Library\E-Library.Services.Abstractions\bin\Debug\net6.0\E-Library.Services.Abstractions.dll
+E:\E-Library\E-Library\E-Library.Services.Abstractions\bin\Debug\net6.0\E-Library.Services.Abstractions.pdb
+E:\E-Library\E-Library\E-Library.Services.Abstractions\bin\Debug\net6.0\E-Library.Models.dll
+E:\E-Library\E-Library\E-Library.Services.Abstractions\bin\Debug\net6.0\E-Library.Models.pdb
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.csproj.AssemblyReference.cache
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.AssemblyInfoInputs.cache
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.AssemblyInfo.cs
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.csproj.CoreCompileInputs.cache
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.csproj.CopyComplete
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.dll
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\refint\E-Library.Services.Abstractions.dll
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\E-Library.Services.Abstractions.pdb
+E:\E-Library\E-Library\E-Library.Services.Abstractions\obj\Debug\net6.0\ref\E-Library.Services.Abstractions.dll

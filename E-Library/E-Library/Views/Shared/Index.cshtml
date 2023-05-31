@@ -1,0 +1,57 @@
+﻿@using E_Library.Models.BookAuthor
+@model IEnumerable<AuthorListVM>
+
+
+@{
+    ViewData["Title"] = "Index";
+    int serialNo = 1;
+}
+<h1 style="color:green; text-align:center">Book Author Index</h1>
+<br />
+<a class="btn btn-success" asp-action="Create" asp-controller="Author">New Category</a>
+
+<table border="1" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+              Serial No
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+          
+           
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    @if(!Model.Any())
+    {
+        <h3>ViewBag.Message</h3>
+    }
+    else
+    {
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @(serialNo++)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AuthorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+
+                    <partial name="_ButtonPartial" model="@item.Id" />
+                </tr>
+            }
+        </tbody>
+    }
+   
+</table>

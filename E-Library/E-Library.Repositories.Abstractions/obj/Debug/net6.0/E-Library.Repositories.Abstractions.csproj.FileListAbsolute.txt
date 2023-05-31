@@ -1,0 +1,15 @@
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\bin\Debug\net6.0\E-Library.Repositories.Abstractions.deps.json
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\bin\Debug\net6.0\E-Library.Repositories.Abstractions.dll
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\bin\Debug\net6.0\E-Library.Repositories.Abstractions.pdb
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\bin\Debug\net6.0\E-Library.Models.dll
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\bin\Debug\net6.0\E-Library.Models.pdb
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.csproj.AssemblyReference.cache
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.AssemblyInfoInputs.cache
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.AssemblyInfo.cs
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.csproj.CoreCompileInputs.cache
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.csproj.CopyComplete
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.dll
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\refint\E-Library.Repositories.Abstractions.dll
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\E-Library.Repositories.Abstractions.pdb
+E:\E-Library\E-Library\E-Library.Repositories.Abstractions\obj\Debug\net6.0\ref\E-Library.Repositories.Abstractions.dll

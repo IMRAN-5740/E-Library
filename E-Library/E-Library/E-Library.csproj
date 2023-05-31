@@ -9,6 +9,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Areas\Admin\Views\Author\Create.cshtml" />
+    <Content Remove="Areas\Admin\Views\Author\Delete.cshtml" />
+    <Content Remove="Areas\Admin\Views\Author\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\Author\Edit.cshtml" />
+    <Content Remove="Areas\Admin\Views\Author\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\Category\Create.cshtml" />
+    <Content Remove="Areas\Admin\Views\Category\Delete.cshtml" />
+    <Content Remove="Areas\Admin\Views\Category\Details.cshtml" />
+    <Content Remove="Areas\Admin\Views\Category\Edit.cshtml" />
+    <Content Remove="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Remove="Views\Author\Create.cshtml" />
+    <Content Remove="Views\Author\Delete.cshtml" />
+    <Content Remove="Views\Author\Details.cshtml" />
+    <Content Remove="Views\Author\Edit.cshtml" />
+    <Content Remove="Views\Author\Index.cshtml" />
+    <Content Remove="Views\Shared\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.15" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
@@ -17,12 +36,43 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\E-Library.AppConfigurations\E-Library.AppConfigurations.csproj" />
     <ProjectReference Include="..\E-Library.Models\E-Library.Models.csproj" />
-    <ProjectReference Include="..\E-Library.Repositories\E-Library.Repositories.csproj" />
+    <ProjectReference Include="..\E-Library.Services.Abstractions\E-Library.Services.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Author\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Author\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Author\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Author\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Author\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <None Include="Views\Author\Create.cshtml" />
+    <None Include="Views\Author\Delete.cshtml" />
+    <None Include="Views\Author\Details.cshtml" />
+    <None Include="Views\Author\Edit.cshtml" />
+    <None Include="Views\Author\Index.cshtml" />
+    <None Include="Views\Category\Create.cshtml" />
+    <None Include="Views\Category\Delete.cshtml" />
+    <None Include="Views\Category\Details.cshtml" />
+    <None Include="Views\Category\Edit.cshtml" />
+    <None Include="Views\Category\Index.cshtml" />
+    <None Include="Views\Shared\Index.cshtml" />
   </ItemGroup>
 
 </Project>

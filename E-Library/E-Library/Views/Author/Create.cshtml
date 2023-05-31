@@ -1,0 +1,38 @@
+﻿@model E_Library.Models.BookAuthor.AuhtorCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Author CreateVM</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AuthorName" class="control-label"></label>
+                <input asp-for="AuthorName" placeholder="Author Name" class="form-control" />
+                <span asp-validation-for="AuthorName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" placeholder="Author Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Create" />
+                 <a class="btn btn-info" asp-action="Index" asp-controller="Category"> Back To List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts{
+        <partial name="~/Views/Shared/_ValidationScriptsPartial.cshtml"></partial>
+        <script src="#"></script>
+}

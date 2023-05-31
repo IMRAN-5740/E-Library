@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,7 @@ namespace E_Library.Models.EntityModels
         [Required]
         [Display(Name = "Author Name")]
         public string AuthorName { get; set; }
+        [DisplayName("Author Description")]
+        public string? Description { get; set; }
     }
 }

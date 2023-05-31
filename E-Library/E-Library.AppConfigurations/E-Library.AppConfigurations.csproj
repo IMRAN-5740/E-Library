@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>E_Library.AppConfigurations</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E-Library.Repositories.Abstractions\E-Library.Repositories.Abstractions.csproj" />
+    <ProjectReference Include="..\E-Library.Repositories\E-Library.Repositories.csproj" />
+    <ProjectReference Include="..\E-Library.Services.Abstractions\E-Library.Services.Abstractions.csproj" />
+    <ProjectReference Include="..\E-Library.Services\E-Library.Services.csproj" />
+  </ItemGroup>
+
+</Project>

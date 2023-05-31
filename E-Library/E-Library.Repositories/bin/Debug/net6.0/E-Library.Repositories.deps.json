@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "E-Library.Repositories/1.0.0": {
         "dependencies": {
-          "E-Library.Databases": "1.0.0"
+          "E-Library.Databases": "1.0.0",
+          "E-Library.Models": "1.0.0",
+          "E-Library.Repositories.Abstractions": "1.0.0"
         },
         "runtime": {
           "E-Library.Repositories.dll": {}
@@ -591,6 +593,14 @@
         "runtime": {
           "E-Library.Models.dll": {}
         }
+      },
+      "E-Library.Repositories.Abstractions/1.0.0": {
+        "dependencies": {
+          "E-Library.Models": "1.0.0"
+        },
+        "runtime": {
+          "E-Library.Repositories.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -984,6 +994,11 @@
       "sha512": ""
     },
     "E-Library.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "E-Library.Repositories.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

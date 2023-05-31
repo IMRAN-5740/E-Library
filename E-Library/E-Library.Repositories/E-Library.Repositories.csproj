@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\E-Library.Databases\E-Library.Databases.csproj" />
+    <ProjectReference Include="..\E-Library.Models\E-Library.Models.csproj" />
+    <ProjectReference Include="..\E-Library.Repositories.Abstractions\E-Library.Repositories.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

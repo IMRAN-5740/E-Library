@@ -1,45 +1,52 @@
-﻿using E_Library.Models.EntityModels;
-using E_Library.Repositories;
+﻿using E_Library.Models.BookAuthor;
+using E_Library.Models.EntityModels;
+using E_Library.Services.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Library.Areas.Admin.Controllers
 {
     public class AuthorController : Controller
     {
-        AuthorRepository _authorRepository;
-   
-        public AuthorController(AuthorRepository authorRepository)
+
+        IAuthorService _authorService;
+        public AuthorController( IAuthorService authorService)
         {
-            _authorRepository = authorRepository;
-          
-                
+            _authorService = authorService;
         }
+        
         public IActionResult Index()
         {
-           var authorList = _authorRepository.GetAll();
+            var authors = _authorService.Get();
+            if(!authors.Any())
+            {
+                ViewBag.Message = "Not Data Found";
+                return RedirectToAction("_NotFound");
+            }
+            var authorList = new List<AuthorListVM>();
+            
+                foreach(var author in authors)
+                {
+                    var addAuthor = new AuthorListVM()
+                    {
+                        Id = author.Id,
+                        AuthorName=author.AuthorName,
+                        Description =author.Description
+                    };
+                    authorList.Add(addAuthor);
+                }
             return View(authorList);
         }
         [HttpGet]
-        public IActionResult Create()
+        public ActionResult Create()
         {
-
-            return View();
+              return View();
         }
         [HttpPost]
-        public IActionResult Create(Author anAuthor)
+        public async Task<ActionResult> Create(Author anAuthor)
         {
-            var deployAuthor = new Author()
-            {
-                AuthorName = anAuthor.AuthorName 
-            };
-            var isSucced=_authorRepository.Create(deployAuthor);
-            if(isSucced)
-            {
-                ViewBag["create"] = "Author Created Successfully";
-                return RedirectToAction(nameof(Index));
-            }
-            return View();
-            
+           
+
+            return View(anAuthor);
         }
         [HttpGet]
         public IActionResult Edit(int id)

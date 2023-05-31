@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\E-Library.Models\E-Library.Models.csproj" />
+    <ProjectReference Include="..\E-Library.Repositories\E-Library.Repositories.csproj" />
+    <ProjectReference Include="..\E-Library.Services.Abstractions\E-Library.Services.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

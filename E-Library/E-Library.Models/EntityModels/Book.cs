@@ -16,6 +16,9 @@ namespace E_Library.Models.EntityModels
         [DisplayName("Book Name")]
         public string BookName { get; set; }
         [Required]
+        [DisplayName("Book Code")]
+        public string BookCode { get; set; }
+        [Required]
         [Display(Name = "Category Name")]
         public int CategoryId { get; set; }
 

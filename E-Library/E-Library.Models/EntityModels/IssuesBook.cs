@@ -22,6 +22,6 @@ namespace E_Library.Models.EntityModels
         public Issue Issues { get; set; }
 
         [ForeignKey("BookId")]
-        public Category Books { get; set; }
+        public Book Books { get; set; }
     }
 }
