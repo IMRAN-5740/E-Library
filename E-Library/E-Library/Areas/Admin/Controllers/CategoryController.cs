@@ -27,13 +27,13 @@ namespace E_Library.Areas.Admin.Controllers
                 ViewBag.Message = "No Data Found";
                 return View("_NotFound");
             }
-            var categoryListVMs = new List<BookListVM>();
+            var categoryListVMs = new List<CategoryListVM>();
 
             foreach (var category in categories)
             {
 
                 // var categoryVM = _mapper.Map<CategoryListVM>(category);
-                var categoryVM = new BookListVM()
+                var categoryVM = new CategoryListVM()
                 {
                     Id = category.Id,
                     CategoryName = category.CategoryName
@@ -49,7 +49,7 @@ namespace E_Library.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(BookCreateVM createModel)
+        public IActionResult Create(CategoryCreateVM createModel)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace E_Library.Areas.Admin.Controllers
         public IActionResult Edit(int id)
         {
             var existingCategory = _categoryService.GetFirstOrDefault(x => x.Id == id);
-            var category = new BookEditVM()
+            var category = new CategoryEditVM()
             {
                 Id = existingCategory.Id,
                 CategoryName = existingCategory.CategoryName
@@ -90,7 +90,7 @@ namespace E_Library.Areas.Admin.Controllers
             return View(category);
         }
         [HttpPost]
-        public IActionResult Edit(BookEditVM editModel)
+        public IActionResult Edit(CategoryEditVM editModel)
         {
             var existingCategory = _categoryService.GetFirstOrDefault(x => x.Id == editModel.Id);
             if (existingCategory == null)
@@ -123,7 +123,7 @@ namespace E_Library.Areas.Admin.Controllers
                 ViewBag.Message = "Requested Page Not Found";
                 return View("_NotFound");
             }
-            var category = new BookDetailsVM()
+            var category = new CategoryDetailsVM()
             {
                 Id = existingCategory.Id,
                 CategoryName = existingCategory.CategoryName
@@ -140,7 +140,7 @@ namespace E_Library.Areas.Admin.Controllers
                 ViewBag.Message = "Requested Page Not Found";
                 return View("_NotFound");
             }
-            var category = new BookDeleteVM()
+            var category = new CategoryDeleteVM()
             {
                 Id = existingCategory.Id,
                 CategoryName = existingCategory.CategoryName
@@ -150,7 +150,7 @@ namespace E_Library.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(BookDeleteVM deleteModel)
+        public IActionResult Delete(CategoryDeleteVM deleteModel)
         {
 
             var existingCategory = _categoryService.GetFirstOrDefault(x => x.Id == deleteModel.Id);

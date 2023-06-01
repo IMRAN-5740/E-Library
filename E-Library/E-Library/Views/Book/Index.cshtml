@@ -1,0 +1,96 @@
+﻿@using E_Library.Models.LibraryBook
+@model IEnumerable<BookListVM>
+
+@{
+    ViewData["Title"] = "Index";
+    int serialNo = 1;
+}
+<h1 style="color:green; text-align:center">Book  Index</h1>
+<br />
+<a class="btn btn-success" asp-action="Create" asp-controller="Book">New Book</a>
+
+<table border="1" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Serial No</th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Picture)
+            </th>
+          
+            <th>
+                 @Html.DisplayNameFor(model => model.Authors.AuthorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categories.CategoryName)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.PublicationName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAvailable)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@(serialNo++)</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Picture)
+                </td>
+              
+                <td>
+                    
+                    @Html.DisplayFor(model => item.Authors.AuthorName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Categories.CategoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublicationName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.Quantity)
+                </td>
+                @if(item.IsAvailable==false)
+                {
+                    <td>
+                        Stock Out
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        Stock Available
+                    </td>
+                }
+               
+                <partial name="_ButtonPartial" model="@item.Id"></partial>
+            </tr>
+        }
+    </tbody>
+</table>

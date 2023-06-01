@@ -1,4 +1,5 @@
 ﻿using E_Library.Models.EntityModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,16 +20,16 @@ namespace E_Library.Models.LibraryBook
         [Display(Name = "Category Name")]
         public int CategoryId { get; set; }
 
-        [ForeignKey("CategoryId")]
-        public Category Categories { get; set; }
+       // [ForeignKey("CategoryId")]
+        //public Category Categories { get; set; }
 
 
         [Required]
         [Display(Name = " Author Name")]
         public int AuthorId { get; set; }
 
-        [ForeignKey("AuthorId")]
-        public Author Authors { get; set; }
+        //[ForeignKey("AuthorId")]
+       // public Author Authors { get; set; }
         [Required]
         [DisplayName("Publication Name")]
         public string PublicationName { get; set; }
@@ -43,6 +44,8 @@ namespace E_Library.Models.LibraryBook
         [Required]
         [Display(Name = "Book Stock Status")]
         public bool IsAvailable { get; set; }
+        public List<SelectListItem>? Categories { get; set; }
+        public List<SelectListItem>? Authors { get; set; }
 
 
     }

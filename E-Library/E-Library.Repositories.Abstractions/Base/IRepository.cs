@@ -16,5 +16,6 @@ namespace E_Library.Repositories.Abstractions.Base
 
         T GetFirstOrDefault(Expression<Func<T, bool>> predicate);
         ICollection<T> Get(Expression<Func<T, bool>> predicate = null);
+        ICollection<T> GetAllResult(Expression<Func<T, bool>> predicate = null);
     }
 }

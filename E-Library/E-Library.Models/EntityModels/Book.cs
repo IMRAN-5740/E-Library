@@ -11,6 +11,12 @@ namespace E_Library.Models.EntityModels
 {
     public class Book
     {
+
+        public Book()
+        {
+            Categories = new Category();
+            Authors=new Author();
+        }
         public int Id { get; set; }
         [Required]
         [DisplayName("Book Name")]

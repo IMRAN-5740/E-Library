@@ -74,5 +74,9 @@ namespace E_Library.Services.Base
         {
             return _repository.Get(predicate);
         }
+        public virtual ICollection<T> GetAllResult(Expression<Func<T, bool>> predicate = null)
+        {
+            return _repository.GetAllResult(predicate);
+        }
     }
 }
