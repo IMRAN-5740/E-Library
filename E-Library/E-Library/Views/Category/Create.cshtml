@@ -3,28 +3,35 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Create</h1>
-
-<h4>CategoryCreateVM</h4>
+<h1 style="text-align:center;color:green">Category Create Form</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+    
+        <form asp-action="Create" method="post">
+            <div class="p-4 rounded border row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CategoryName" class="control-label"></label>
-                <input asp-for="CategoryName" class="form-control" />
+            <div class="col-8">
+            <div class="form-group row">
+                <div class="col-4 text-black">
+                    <label asp-for="CategoryName"></label>
+                </div>
+                <div class="col-8">
+                   
+                    <input asp-for="CategoryName" class="form-control" />
+
+                </div>
                 <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
-            
            
             <div class="form-group">
-                <input type="submit" class="btn btn-success" value="Create" />
-                 <a class="btn btn-info" asp-action="Index" asp-controller="Category"> Back To List</a>
-            </div>
+                <input type="submit" class="btn btn-outline-success" value="Create" />
+                <a class="btn btn-outline-info" asp-action="Index" asp-controller="Category"><i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp; Back To List</a>
+               </div>
+           </div>
+        </div>
+
         </form>
-    </div>
+   
 </div>
 
 @section scripts{

@@ -4,10 +4,10 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+
 
 <div>
-    <h4>CategoryDeleteVM</h4>
+    <h4>Category Delete Form</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -21,8 +21,8 @@
     
     <form asp-action="Delete">
         <h4 class="text-danger">Do you want to Delete this Category..?</h4>
-        <input type="submit" class="btn btn-danger" value="Delete Data" />
-        <a class="btn btn-info" asp-action="Index" asp-controller="Category"> Back To List</a>
+        <input type="submit" class="btn btn-outline-danger" value="Delete Data" />
+        <a class="btn btn-outline-info" asp-action="Index" asp-controller="Category"> <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Back To List</a>
 
     </form>
 </div>
