@@ -20,7 +20,7 @@ namespace E_Library.Models.LibraryBook
         [Display(Name = "Category Name")]
         public int CategoryId { get; set; }
 
-       // [ForeignKey("CategoryId")]
+        //[ForeignKey("CategoryId")]
         //public Category Categories { get; set; }
 
 
@@ -29,7 +29,7 @@ namespace E_Library.Models.LibraryBook
         public int AuthorId { get; set; }
 
         //[ForeignKey("AuthorId")]
-       // public Author Authors { get; set; }
+        //public Author Authors { get; set; }
         [Required]
         [DisplayName("Publication Name")]
         public string PublicationName { get; set; }

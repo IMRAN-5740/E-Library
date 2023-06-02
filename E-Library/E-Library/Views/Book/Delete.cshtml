@@ -4,94 +4,152 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1 style="text-align:center;color:red">Book Delete Form</h1>
 
-<div>
-    <h4>CategoryDeleteVM</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BookName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BookName)
-        </dd>
+<style>
+    #Design{
+        color:green;
+        font-size:larger;
+    }
+</style>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.BookCode)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.BookCode)
-        </dd>
+<div class="row" style="border:medium;color:orangered">
+   
+    <form asp-action="Delete" method="post" enctype="multipart/form-data">
+        <div class="p-4 rounded border row"  >
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Picture)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Picture)
-        </dd>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Categories.CategoryName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Categories.CategoryName)
-        </dd>
+            <div class="col-8">
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Authors.AuthorName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Authors.AuthorName)
-        </dd>
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="BookName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="Picture" />
+                        <input asp-for="BookName" readonly="readonly" class="form-control" />
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.PublicationName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.PublicationName)
-        </dd>
+                    </div>
+                    <span asp-validation-for="BookName" class="text-danger"></span>
+                </div>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="BookCode"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="BookCode" readonly="readonly" class="form-control" />
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
+                    </div>
+                    <span asp-validation-for="BookCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="@Model.Authors.AuthorName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="@Model.Authors.AuthorName" readonly="readonly" class="form-control" />
+
+                    </div>
+                    <span asp-validation-for="@Model.Authors.AuthorName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="@Model.Categories.CategoryName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="@Model.Categories.CategoryName" readonly="readonly" class="form-control"  />
+
+                    </div>
+                    <span asp-validation-for="@Model.Categories.CategoryName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="PublicationName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PublicationName" readonly="readonly" class="form-control" />
+
+                    </div>
+                    <span asp-validation-for="PublicationName" class="text-danger"></span>
+                </div>
 
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IsAvailable)
-        </dt>
-        @if (Model.IsAvailable == true)
-        {
-            <dd class="col-sm-10">
-                Stock Available
-            </dd>
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="Price" ></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Price" readonly="readonly" class="form-control" />
 
-        }
-        else
-        {
+                    </div>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
 
-            <dd class="col-sm-10">
-                Stock Out
-            </dd>
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="Quantity"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Quantity" readonly="readonly" class="form-control" />
 
-        }
-       
-    </dl>
-    
-    <form asp-action="Delete">
-        <h4 class="text-danger">Do you want to Delete this Book..?</h4>
-        <input type="submit" class="btn btn-danger" value="Delete Data" />
-        <a class="btn btn-info" asp-action="Index" asp-controller="Book"> Back To List</a>
+                    </div>
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
 
+                
+
+                <div class="form-group row">
+                    <div class="col-4" id="Design">
+                        <label asp-for="IsAvailable"></label>
+                    </div>
+                    @if(Model.IsAvailable==false)
+                    {
+                        <div class="col-8" style="color:red;font-size:larger">
+                            Stock Out
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-8" style="color:green;font-size:larger">
+                            Stock Available
+                        </div>
+                    }
+
+                    <span asp-validation-for="IsAvailable" class="text-danger"></span>
+                </div>
+                <br />
+                <h4 style="color:red;text-align:center">Are you want to delete this user permenantly ?</h4>
+                <div class="form-group text-center">
+                    <input type="submit" class="btn btn-outline-danger" value="Delete Data" />
+                    <a asp-action="Index" class="btn btn-outline-info"> <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Back to List</a>
+                </div>
+            </div>
+
+            <div class="col-1"></div>
+            <div class="col-3">
+                <h3 style="text-align:center ;color:red">Book Picture</h3>
+                <img src="~/@Model.Picture" width="300" height="250" />
+                @if (Model.IsAvailable)
+                {
+                    <img src="~/BookImages/in-stock.jpg" width="300" height="70" />
+                }
+                else
+                {
+                    <img src="~/BookImages/out-of-stock.jpg" width="300" height="70" />
+                }
+            </div>
+            @*<div class="col-1" style="color:red;font-size:larger">Book Picture</div>
+            <div class="col-3">
+                <img src="~/@Model.Picture" width="100" />
+            </div>*@
+
+
+        </div>
     </form>
 </div>

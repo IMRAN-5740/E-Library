@@ -35,7 +35,7 @@ namespace E_Library.Models.LibraryBook
         public double? Price { get; set; }
         [DisplayName("Book Quantity")]
         public int Quantity { get; set; }
-        [DisplayName("Book Stock Status")]
+        [DisplayName("Book Status")]
         public bool IsAvailable { get; set; }
         public int CategoryId { get; set; }
         public List<SelectListItem> ListCategory { get; set; }

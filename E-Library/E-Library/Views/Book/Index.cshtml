@@ -5,12 +5,12 @@
     ViewData["Title"] = "Index";
     int serialNo = 1;
 }
-<h1 style="color:green; text-align:center">Book  Index</h1>
+<h1 style="color:green; text-align:center">Book  Index Form</h1>
 <br />
-<a class="btn btn-success" asp-action="Create" asp-controller="Book">New Book</a>
+<a class="btn btn-success" asp-action="Create" asp-controller="Book"> <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;New Book</a>
 
-<table border="1" class="table table-bordered table-hover table-striped">
-    <thead>
+<table border="3" class="table table-bordered table-hover table-striped">
+    <thead class="text-center">
         <tr>
             <th>Serial No</th>
             <th>
@@ -45,7 +45,7 @@
             <th>Actions</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="text-center">
         @foreach (var item in Model)
         {
             <tr>
@@ -56,9 +56,11 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.BookCode)
                 </td>
+
                 <td>
-                    @Html.DisplayFor(modelItem => item.Picture)
+                    <img src="~/@item.Picture" width="90" height="100" />
                 </td>
+               
               
                 <td>
                     
@@ -78,13 +80,13 @@
                 </td>
                 @if(item.IsAvailable==false)
                 {
-                    <td>
+                    <td style="color:red;font-size:larger">
                         Stock Out
                     </td>
                 }
                 else
                 {
-                    <td>
+                    <td style="color:green;font-size:larger">
                         Stock Available
                     </td>
                 }
