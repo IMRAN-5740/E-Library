@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\E-Library.bundle.scp.css"
     },
     {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\CyberLaw.jpeg",
+      "PackagePath": "staticwebassets\\BookImages\\CyberLaw.jpeg"
+    },
+    {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\DCandE.jpeg",
+      "PackagePath": "staticwebassets\\BookImages\\DCandE.jpeg"
+    },
+    {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\No-Image.png",
+      "PackagePath": "staticwebassets\\BookImages\\No-Image.png"
+    },
+    {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\Programming.jpg",
+      "PackagePath": "staticwebassets\\BookImages\\Programming.jpg"
+    },
+    {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\in-stock.jpg",
+      "PackagePath": "staticwebassets\\BookImages\\in-stock.jpg"
+    },
+    {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\out-of-stock.jpg",
+      "PackagePath": "staticwebassets\\BookImages\\out-of-stock.jpg"
+    },
+    {
       "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
