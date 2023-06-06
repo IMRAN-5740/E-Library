@@ -1,4 +1,6 @@
-﻿using E_Library.Models.Role;
+﻿using E_Library.Models.EntityModels;
+using E_Library.Models.Role;
+using E_Library.Services;
 using E_Library.Services.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,6 +32,38 @@ namespace E_Library.Areas.Admin.Controllers
                 roleListVMs.Add(roleVM);
             }
             return View(roleListVMs);
+        }
+        public IActionResult Create()
+        {
+            return View();        
+        }
+
+        [HttpPost]
+        public IActionResult Create(RoleCreateVM createModel)
+        {
+            if (ModelState.IsValid)
+            {
+                //TODO:Model Mapping :Auto Mapper
+                var category = new Category()
+                {
+                    CategoryName = createModel.CategoryName
+                };
+                var result = _categoryService.Create(category);
+                if (result.IsSucced)
+                {
+                    ModelState.Clear();
+                    return RedirectToAction(nameof(Index));
+
+                }
+                if (result.ErrorMessages.Any())
+                {
+                    foreach (var error in result.ErrorMessages)
+                    {
+                        ModelState.AddModelError("", error);
+                    }
+                }
+
+            }
         }
     }
 }
