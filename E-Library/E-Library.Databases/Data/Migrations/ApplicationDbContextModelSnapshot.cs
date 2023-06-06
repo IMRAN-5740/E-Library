@@ -39,7 +39,7 @@ namespace E_Library.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("E_Library.Models.EntityModels.Book", b =>
@@ -87,7 +87,7 @@ namespace E_Library.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("E_Library.Models.EntityModels.Category", b =>
@@ -104,7 +104,7 @@ namespace E_Library.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("E_Library.Models.EntityModels.Issue", b =>
@@ -144,7 +144,7 @@ namespace E_Library.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Issues");
+                    b.ToTable("Issues", (string)null);
                 });
 
             modelBuilder.Entity("E_Library.Models.EntityModels.IssuesBook", b =>
@@ -167,7 +167,7 @@ namespace E_Library.Data.Migrations
 
                     b.HasIndex("IssueId");
 
-                    b.ToTable("IssuesBooks");
+                    b.ToTable("IssuesBooks", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

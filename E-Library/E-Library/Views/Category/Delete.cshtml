@@ -7,6 +7,7 @@
 
 
 <div>
+    <form asp-action="Delete" method="post">
     <h4>Category Delete Form</h4>
     <hr />
     <dl class="row">
@@ -19,7 +20,7 @@
        
     </dl>
     
-    <form asp-action="Delete">
+    
         <h4 class="text-danger">Do you want to Delete this Category..?</h4>
         <input type="submit" class="btn btn-outline-danger" value="Delete Data" />
         <a class="btn btn-outline-info" asp-action="Index" asp-controller="Category"> <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Back To List</a>
