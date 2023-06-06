@@ -40,6 +40,9 @@ namespace E_Library.AppConfigurations
             services.AddTransient<IUsersRepository, UsersRepository>();
             services.AddTransient<IUserService, UserService>();
 
+            services.AddTransient<IRoleRepository, RoleRepository>();
+            services.AddTransient<IRoleService, RoleService>();
+
 
 
         }

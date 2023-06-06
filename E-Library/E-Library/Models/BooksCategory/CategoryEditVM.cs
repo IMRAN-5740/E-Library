@@ -3,7 +3,7 @@
 namespace E_Library.Models.BooksCategory
 
 {
-    public class CategoryEditVM
+    public class RoleEditVM
     {
         public int Id { get; set; }    
         public string CategoryName { get; set; }

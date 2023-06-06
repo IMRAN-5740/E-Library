@@ -4,7 +4,7 @@ namespace E_Library.Models.BooksCategory
 
 
 {
-    public class CategoryDeleteVM
+    public class RoleDeleteVM
     {
         public int Id { get; set; }
         public string CategoryName { get; set; }

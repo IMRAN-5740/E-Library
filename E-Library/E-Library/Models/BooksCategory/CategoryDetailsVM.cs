@@ -4,7 +4,7 @@ namespace E_Library.Models.BooksCategory
 
 
 {
-    public class CategoryDetailsVM
+    public class RoleDetailsVM
     {
         public int Id { get; set; }
         public string CategoryName { get; set; }
