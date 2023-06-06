@@ -2,7 +2,7 @@
 
 namespace E_Library.Models.BooksCategory
 {
-    public class RoleListVM
+    public class CategoryListVM
     {
         public int Id { get; set; }
 

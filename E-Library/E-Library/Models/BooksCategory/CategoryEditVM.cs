@@ -3,9 +3,11 @@
 namespace E_Library.Models.BooksCategory
 
 {
-    public class RoleEditVM
+    public class CategoryEditVM
     {
-        public int Id { get; set; }    
+        public int Id { get; set; }
+        [StringLength(50)]
+        [Required(ErrorMessage = "Please Provide your Category Name")]
         public string CategoryName { get; set; }
        
     }
