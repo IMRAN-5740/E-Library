@@ -17,6 +17,7 @@
 
             <div class="col-8">
 
+
                 <div class="form-group row">
                     <div class="col-4">
                         <label asp-for="BookName"></label>
@@ -141,7 +142,36 @@
                     <a asp-action="Index" class="btn btn-outline-success"> <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Back to List</a>
                 </div>
      
+
+               
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <div class="form-group text-center">
+                    <img id="ProfilePicturePreview" class="border-info rounded-circle" style="max-width:150px" />
+                </div>
+
             </div>
             </div>
     </form>
 </div>
+
+@section Scripts
+    {
+
+    <script>
+        $(document).ready(function)()
+        {
+            var output = document.getElementById('ProfilePicturePreview');
+            output.src = $(Picture).val();
+        }
+    </script>
+    <script>
+
+        $("#Picture").on("change", function () {
+            var output = document.getElementById('ProfilePicturePreview');
+            output.src = $(this).val();
+        })
+    </script>
+
+}

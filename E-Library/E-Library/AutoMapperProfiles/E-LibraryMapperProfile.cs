@@ -2,6 +2,10 @@
 using E_Library.Models.EntityModels;
 using AutoMapper;
 using E_Library.Models.LibraryBook;
+using E_Library.Models.BooksAuthor;
+using E_Library.Models.AuthUser;
+using Microsoft.AspNetCore.Identity;
+using E_Library.Models.AuthModels;
 
 namespace E_Library.AutoMapperProfiles
 {
@@ -25,6 +29,23 @@ namespace E_Library.AutoMapperProfiles
             CreateMap<BookDeleteVM, Book>();
             CreateMap<Book, BookDeleteVM>();
 
+
+            CreateMap<Author, AuthorCreateVM>();
+            CreateMap<AuthorCreateVM, Author>();
+
+
+            CreateMap<Author, AuthorDeleteVM>();
+            CreateMap<AuthorDeleteVM, Author>();
+
+            CreateMap<Author, AuthorDetailsVM>();
+            CreateMap<AuthorDetailsVM, Author>();
+            CreateMap<Author, AuthorEditVM>();
+            CreateMap<AuthorEditVM, Author>();
+            CreateMap<UserIndexVM, ApplicationUser>();
+            CreateMap<ApplicationUser, UserIndexVM>();
+
+            CreateMap<UserCreateVM, ApplicationUser>();
+            CreateMap<ApplicationUser, UserCreateVM>();
 
             //CreateMap<CategoryListVM, Category>();
             //CreateMap<Category, CategoryListVM>();

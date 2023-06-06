@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Student\Views\User\**" />
+    <Content Remove="Areas\Student\Views\User\**" />
+    <EmbeddedResource Remove="Areas\Student\Views\User\**" />
+    <None Remove="Areas\Student\Views\User\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Author\Create.cshtml" />
     <Content Remove="Views\Author\Delete.cshtml" />
     <Content Remove="Views\Author\Details.cshtml" />

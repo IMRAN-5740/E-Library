@@ -1,8 +1,10 @@
 ﻿using E_Library.Databases.Data;
+using E_Library.Models.AuthModels;
 using E_Library.Repositories;
 using E_Library.Repositories.Abstractions;
 using E_Library.Services;
 using E_Library.Services.Abstractions;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,10 +21,10 @@ namespace E_Library.AppConfigurations
                 options.UseSqlServer(connectionString);
             });
             //dependency resolving mechanisms
-           
 
 
-          
+
+           // services.AddTransient<IPasswordHasher<ApplicationUser>>();
             services.AddTransient<IAuthorRepository, AuthorRepository>();
             services.AddTransient<IAuthorService, AuthorService>();
 

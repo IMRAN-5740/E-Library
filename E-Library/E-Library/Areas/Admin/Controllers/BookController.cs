@@ -205,9 +205,7 @@ namespace E_Library.Areas.Admin.Controllers
 
             if (picture == null)
             {
-
                 string oldImage = editModel.Picture;
-
                 editModel.Picture = oldImage;
 
             }

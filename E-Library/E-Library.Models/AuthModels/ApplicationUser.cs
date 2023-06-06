@@ -11,10 +11,13 @@ namespace E_Library.Models.AuthModels
 {
     public class ApplicationUser:IdentityUser
     {
-        public int Id { get; set; }
+        
         [Required(ErrorMessage = "Please Enter your First Name")]
         [DisplayName("First Name")]
         public string FirstName { get; set; }
+       
+        [DisplayName("Middle Name")]
+        public string? MiddleName { get; set; }
         [Required(ErrorMessage = "Please Enter your Last Name")]
         [DisplayName("Last Name")]
         public string LastName { get; set; }

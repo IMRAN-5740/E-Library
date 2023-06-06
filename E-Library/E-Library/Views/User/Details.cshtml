@@ -1,0 +1,96 @@
+﻿@model E_Library.Models.AuthUser.UserDetailsVM
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    #Design {
+        color: green;
+    }
+</style>
+
+<h1 style="text-align:center;color:green;">Registration Details Form</h1>
+
+<div class="p-4 rounded border row">
+
+    <div class="col-8">
+        <dl class="row">
+
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+            @if(Model.MiddleName.Any())
+            {
+                <dt class="col-sm-4" id="Design">
+                    @Html.DisplayNameFor(model => model.MiddleName)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.MiddleName)
+                </dd>
+            }
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.RegNo)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.RegNo)
+            </dd>
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.DeptName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.DeptName)
+            </dd>
+            <dt class="col-sm-4" id="Design">
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+            @if(Model.Address.Any())
+            {
+                <dt class="col-sm-4" id="Design">
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+            }
+           
+           
+        </dl>
+    </div>
+    
+   
+</div>
+
+
+
+<div class="form-group text-center">
+    <a class="btn btn-outline-success" asp-controller="User"  asp-action="Edit" asp-route-id="@Model.Id"><i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Edit Data</a>
+    <a asp-action="Index" class="btn btn-outline-info"> <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Back to List</a>
+</div>
+

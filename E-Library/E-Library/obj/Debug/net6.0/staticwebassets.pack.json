@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\BookImages\\DCandE.jpeg"
     },
     {
-      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\No-Image.png",
-      "PackagePath": "staticwebassets\\BookImages\\No-Image.png"
-    },
-    {
       "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\Programming.jpg",
       "PackagePath": "staticwebassets\\BookImages\\Programming.jpg"
+    },
+    {
+      "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\ScienceFiction.jpeg",
+      "PackagePath": "staticwebassets\\BookImages\\ScienceFiction.jpeg"
     },
     {
       "Id": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\in-stock.jpg",

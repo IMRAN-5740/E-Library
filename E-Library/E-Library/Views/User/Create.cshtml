@@ -1,0 +1,218 @@
+﻿@model E_Library.Models.AuthUser.UserCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="text-align:center;color:green;">Registration Form</h1>
+<style>
+    .form-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+
+<div class="form-center ">
+    <form asp-action="Create" method="post" id="user-form" enctype="multipart/form-data">
+        <div class="p-2 rounded border bg-info">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <h4>@ViewBag.message</h4>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="UserName" ></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="UserName" placeholder="Enter UserName" class="form-control" />
+
+                </div>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="FirstName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="FirstName" placeholder="First Name" class="form-control" />
+
+                </div>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="MiddleName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="MiddleName" placeholder="Optional field" class="form-control" />
+
+                </div>
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="LastName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="LastName" placeholder="Last Name" class="form-control" />
+
+                </div>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="RegNo"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="RegNo" placeholder="Registration No" class="form-control" />
+
+                </div>
+                <span asp-validation-for="RegNo" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="DeptName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="DeptName" placeholder="Department Name" class="form-control" />
+
+                </div>
+                <span asp-validation-for="DeptName" class="text-danger"></span>
+            </div>
+         
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="PhoneNumber"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="PhoneNumber" placeholder="Mobile Number" class="form-control" type="number" />
+                </div>
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Email"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Email" placeholder="Email Address" class="form-control" type="email" />
+
+                </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Address"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Address" placeholder="Address" class="form-control" />
+
+                </div>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Password"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Password" placeholder="Password" class="form-control" type="password" />
+
+
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="ConfirmPassword"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="ConfirmPassword" placeholder="Confirm Password" class="form-control" type="password" />
+
+
+                </div>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+         <br />
+            <div class="form-group text-center">
+                <input type="submit" class="btn btn-outline-dark " value="Sign Up" />
+                <p>
+                    <a class="btn btn-outline-dark" asp-area="Identity" asp-page="/Account/Login"><i class="fa-sharp fa-solid fa-right-to-bracket fa-shake " style='color:green'></i>&nbsp Go to Login Page</a>
+                </p>
+            </div>
+
+
+
+        </div>
+    </form>
+</div>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
+    <script type="text/javascript">
+
+        $(function () {
+            var add = '@TempData["Save"]'
+            if (add != '') {
+                alertify.success(add);
+
+            }
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#user-form").validate({
+                rules: {
+                    UserName: {
+                        required: true,
+
+                    },
+                    FirstName: {
+                        required: true,
+
+                    },
+                    LastName: {
+                        required: true,
+
+                    },
+                    Email: {
+                        required: true,
+
+                    },
+                    PasswordHash: {
+                        required: true,
+
+                    },
+                    PhoneNumber: {
+                        required: true,
+
+                    }
+
+                },
+                messages:
+                {
+                    UserName: "Enter your User Name",
+                    FirstName: "Enter your First Name",
+                    Lastname: "Enter your Last Name",
+                    Email: "Please Enter your Email",
+                    PasswordHash: "Please Enter Valid Password",
+                    PhoneNumber: "Enter your Phone Number"
+                }
+            });
+        });
+    </script>
+
+    }
+
+
+

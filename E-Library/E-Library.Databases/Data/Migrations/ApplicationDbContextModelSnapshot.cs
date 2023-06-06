@@ -393,6 +393,9 @@ namespace E_Library.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("RegNo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

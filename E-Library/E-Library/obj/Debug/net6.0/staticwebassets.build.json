@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X5WVpLqQ7M61hKz4cBJ98Ofu2qHIHxcxXQdopNbsEe8=",
+  "Hash": "XhWsvT9x+fxDyMsfRDFFwoS62RgUSRWqL8GfTn2Ese0=",
   "Source": "E-Library",
   "BasePath": "_content/E-Library",
   "Mode": "Default",
@@ -1122,23 +1122,6 @@
       "OriginalItemSpec": "wwwroot\\BookImages\\in-stock.jpg"
     },
     {
-      "Identity": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\No-Image.png",
-      "SourceId": "E-Library",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\",
-      "BasePath": "_content/E-Library",
-      "RelativePath": "BookImages/No-Image.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\BookImages\\No-Image.png"
-    },
-    {
       "Identity": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\out-of-stock.jpg",
       "SourceId": "E-Library",
       "SourceType": "Discovered",
@@ -1171,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\BookImages\\Programming.jpg"
+    },
+    {
+      "Identity": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\BookImages\\ScienceFiction.jpeg",
+      "SourceId": "E-Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\",
+      "BasePath": "_content/E-Library",
+      "RelativePath": "BookImages/ScienceFiction.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\BookImages\\ScienceFiction.jpeg"
     },
     {
       "Identity": "E:\\E-Library\\E-Library\\E-Library\\wwwroot\\css\\site.css",

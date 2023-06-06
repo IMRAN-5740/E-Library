@@ -1,4 +1,5 @@
-﻿using E_Library.Repositories.Abstractions.Base;
+﻿using E_Library.Models.AuthModels;
+using E_Library.Repositories.Abstractions.Base;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace E_Library.Repositories.Abstractions
 {
-    public interface IUsersRepository : IRepository<IdentityUser>
+    public interface IUsersRepository : IRepository<ApplicationUser>
     {
     }
 }

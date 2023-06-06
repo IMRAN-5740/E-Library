@@ -1,4 +1,5 @@
 ﻿using E_Library.Models;
+using E_Library.Models.AuthModels;
 using E_Library.Repositories.Abstractions;
 using E_Library.Services.Abstractions;
 using E_Library.Services.Base;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace E_Library.Services
 {
-    public class UserService : Service<IdentityUser>, IUserService
+    public class UserService : Service<ApplicationUser>, IUserService
     {
         IUsersRepository _userRepository;
         public UserService(IUsersRepository userRepository) : base(userRepository)
@@ -20,7 +21,7 @@ namespace E_Library.Services
             _userRepository = userRepository;
         }
 
-        public override Result Create(IdentityUser entity)
+        public override Result Create(ApplicationUser entity)
 
         {
 
@@ -53,7 +54,7 @@ namespace E_Library.Services
 
             return result;
         }
-        public override Result Update(IdentityUser entity)
+        public override Result Update(ApplicationUser entity)
         {
             var result = new Result();
             bool isSuccess = _userRepository.Update(entity);
@@ -68,7 +69,7 @@ namespace E_Library.Services
 
             return result;
         }
-        public override Result Remove(IdentityUser entity)
+        public override Result Remove(ApplicationUser entity)
         {
             var result = new Result();
             bool isSuccess = _userRepository.Remove(entity);
